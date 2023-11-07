@@ -219,10 +219,9 @@ int main() {
                         forcePosition.second * force.first);
       } else {
         cout << "Error" << endl;
+        throw 400;
       }
     }
-
-    // cout << "L3: " << L3 << "; Moment: " << currentM << endl;
 
     if ((currentM) / 360 > maximumM) {
       maximumM = abs(currentM / 360);
